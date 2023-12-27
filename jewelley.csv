@@ -1,0 +1,85 @@
+type,material,colour,shape,size,weight,price
+tijara,kamen,bež,trapez,668,155,4785
+narukvica,papir,plava,polukrug,376,241,5321
+lancic,papir,narančasta,kugla,547,36,2913
+bros,perje,srebrna,valjak,812,20,5764
+bros,drvo,nijansa,kvadrat,457,178,9438
+lancic,zlato,bijela,cilindar,987,160,7754
+ukosnica,bakar,plava,elipsa,86,71,6590
+lancic,perje,bijela,polukrug,814,27,2947
+manzeta,platina,ružičasta,trapez,959,158,3467
+nausnica,platina,nijansa,prizma,37,189,5796
+narukvica,koralj,smeđa,kugla,6,205,7483
+ukosnica,bakar,plava,trokut,782,241,9829
+lancic,guma,krem,elipsa,30,182,8294
+igla za kravatu,tekstil,bordo,valjak,665,261,9209
+tijara,koza,nijansa,trokut,74,153,3281
+bros,kamenje,narančasta,oval,704,253,9772
+ogrlica,kost,srebrna,cilindar,461,73,5794
+ogrlica,koralj,žuta,valjak,111,128,9153
+lancic,kost,nijansa,trapez,618,249,2309
+prsten,kost,smeđa,stošac,840,115,7194
+prsten,kost,plava,pravokutnik,266,149,3574
+igla za kravatu,nikal,maslinasta,pravokutnik,115,239,5712
+narukvica,drvo,krem,romb,440,285,2835
+manzeta,guma,crvena,cilindar,886,81,9162
+igla za kravatu,perje,maslinasta,kugla,112,71,5714
+manzeta,perje,crna,elipsa,597,285,7176
+nausnica,staklo,crna,kocka,194,56,8449
+narukvica,slonova kost,siva,valjak,988,85,6914
+ogrlica,nikal,krem,polukrug,238,243,8285
+ukosnica,tekstil,bež,valjak,54,246,4627
+prsten,kamen,nijansa,oval,789,137,3334
+lancic,tekstil,zelena,stošac,472,196,2812
+igla za kravatu,slonova kost,narančasta,cilindar,475,97,5798
+narukvica,kvarc,plava,krug,436,113,5588
+ukosnica,kost,siva,kvadrat,288,163,7491
+ukosnica,staklo,ljubičasta,prizma,810,36,8709
+manzeta,kvarc,siva,valjak,465,84,8841
+bros,nikal,krem,kocka,596,23,5571
+prsten,koralj,bijela,stošac,294,144,2328
+igla za kravatu,kost,bakrena,kugla,353,30,9748
+nausnica,kost,maslinasta,stošac,273,58,3010
+ogrlica,drvo,nijansa,trapez,758,169,3448
+bros,koza,plava,polukrug,780,124,7823
+nausnica,papir,siva,kugla,242,233,3337
+dzepni sat,zlato,zlatna,stošac,76,15,4000
+prsten,perje,zelena,oval,288,249,3568
+prsten,koza,ljubičasta,polukrug,464,279,4733
+igla za kravatu,kamenje,bakrena,kocka,37,265,9668
+bros,kristal,smeđa,valjak,261,222,2781
+tijara,plastika,crvena,stošac,485,259,9963
+prsten,kristal,nijansa,kocka,46,91,7268
+nausnica,zlato,srebrna,kocka,594,64,9012
+narukvica,koralj,plava,piramida,380,188,6773
+bros,tekstil,bordo,cilindar,879,125,7697
+tijara,staklo,zelena,kocka,503,148,4204
+ogrlica,staklo,siva,krug,828,252,9137
+lancic,plastika,žuta,polukrug,567,186,2620
+nausnica,kristal,bijela,kugla,272,286,2860
+igla za kravatu,kristal,ljubičasta,krug,352,213,9510
+nausnica,kristal,krem,oval,961,164,2259
+narukvica,papir,bakrena,krug,199,74,4926
+ogrlica,zlato,ružičasta,romb,558,199,4273
+narukvica,drvo,zelena,valjak,780,206,6127
+bros,nikal,crna,elipsa,765,72,7685
+narukvica,perje,zlatna,romb,319,24,9987
+lancic,srebro,bordo,kocka,356,149,3340
+igla za kravatu,kost,nijansa,prizma,640,189,6304
+dzepni sat,nikal,siva,trapez,797,176,8199
+ogrlica,staklo,zlatna,oval,700,183,9374
+tijara,kost,zelena,elipsa,236,76,2057
+ogrlica,tekstil,crvena,oval,943,115,3615
+ogrlica,kvarc,ljubičasta,krug,36,32,5620
+igla za kravatu,guma,siva,valjak,898,38,3373
+nausnica,drvo,bordo,oval,984,27,7166
+dzepni sat,kost,bež,kvadrat,358,182,7515
+tijara,koralj,nijansa,prizma,509,148,3256
+tijara,kristal,bakrena,stošac,456,119,8810
+ukosnica,plastika,žuta,kvadrat,935,188,2709
+bros,drvo,siva,trapez,123,252,3081
+ukosnica,kamenje,srebrna,oval,431,265,7544
+lancic,slonova kost,ružičasta,romb,671,272,4491
+manzeta,plastika,bakrena,kvadrat,327,175,9314
+narukvica,kost,siva,trokut,638,31,9826
+narukvica,drvo,crvena,valjak,512,98,9231
