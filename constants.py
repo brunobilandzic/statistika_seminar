@@ -1,4 +1,3 @@
-import random
 types= [
     "ogrlica",
     "prsten",
@@ -74,7 +73,7 @@ shapes = [
     "valjak",
     "prizma",
     "polukrug"]
-MAX_COUNT= 100
+MAX_COUNT= 300
 observed_features   = [
     "type",
     "material",

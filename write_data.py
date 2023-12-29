@@ -3,7 +3,7 @@ from constants import types, materials, colours, shapes,observed_features, MAX_C
 
 def create_data():
     jewellery = []
-    jewellery_count = random.randint(50, MAX_COUNT)
+    jewellery_count = random.randint(200, MAX_COUNT)
     print(f"Generating {jewellery_count} jewellery items...")
     for i in range(jewellery_count):
         jewellery.append(create_jewellery_item())
