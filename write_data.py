@@ -29,7 +29,6 @@ def write_data(jewellery):
                 jewellery_item["price"]
             ])
     
-    
         
 def create_jewellery_item():
     jewellery_item = {
@@ -39,9 +38,23 @@ def create_jewellery_item():
         "shape": random.choice(shapes),
         "size": random.randint(1, MAX_SIZE),
         "weight": random.randint(10, MAX_WEIGHT),
-        "price": random.randint(2000, MAX_PRICE)
+        "price": get_price()
     }
     return jewellery_item
+
+def get_price():
+    r = random.randint(0, 100)
+    if r < 25:
+        return random.randint(2000, 3000)
+    if r<40:
+        return random.randint(3000, 4000)
+    if r<47:
+        return random.randint(4000, 5000)
+    if r<63:
+        return random.randint(5000, 6000)
+    if r<86:
+        return random.randint(6000, 7000)
+    return random.randint(7000, MAX_PRICE)
 
 if __name__ == "__main__":
     jewellery = create_data()
