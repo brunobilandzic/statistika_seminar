@@ -1,5 +1,5 @@
 from read_data import read_data, get_price, get_item_count_by_type, find_most_expensive_item, find_cheapest_item
-import statistics, math, tabulate
+import statistics, math, tabulate, matplotlib.pyplot as plt
 
 def print_line():
     print("\n----------------------------------------\n")
@@ -115,7 +115,54 @@ def frequency_table(prices):
         ]
     ))
     print_line()
+    return classes_dict
+
+def treci():
+    jewellery = prvi()
+    prices = list(map(get_price, jewellery))
+    prices.sort()
+    classes_dict = frequency_table(prices)
+
+
+    plt.subplot(3, 1, 1)
     
+    plt.title('Price Distribution')
+    plt.xlabel('Price')
+    plt.ylabel('Frequency')
+    bins = [class_range[0] for class_range in classes_dict]  + [max(prices)]
+    plt.hist(prices, bins, edgecolor='black')
+    
+    plt.xticks(bins, rotation='vertical')
+
+
+    plt.subplot(3, 1, 2)
+    class_midpoints = [(class_range[0] + class_range[1]) / 2 for class_range in classes_dict]
+    frequencies = [classes_dict[class_range]['frequency'] for class_range in classes_dict]  
+    
+    plt.title('Frequency Polygon')
+    plt.xlabel('Price')
+    plt.ylabel('Frequency')
+    plt.plot(class_midpoints, frequencies, marker='o', linestyle='-')
+    plt.xticks(class_midpoints, rotation='vertical')
+    
+    plt.subplot(3, 1, 3)
+    plt.title('Relative Frequency Histogram')
+    plt.xlabel('Price')
+    plt.ylabel('Relative Frequency')
+
+
+    total_count = sum(frequencies)
+    relative_frequencies = [freq / total_count for freq in frequencies]
+
+    bins = [class_range[0] for class_range in classes_dict]
+
+    
+    plt.bar(bins, relative_frequencies, width=350, edgecolor='black', align='edge')
+    plt.xticks(bins, rotation='vertical')
+    
+    
+    plt.tight_layout() 
+    plt.show()    
     
 
 def drugi():
@@ -125,5 +172,5 @@ def drugi():
     frequency_table(prices)
 
 if __name__ == "__main__":
-    drugi()
+    treci()
     
