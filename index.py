@@ -1,5 +1,7 @@
 from read_data import read_data, get_price, get_item_count_by_type, find_most_expensive_item, find_cheapest_item
 import statistics, math, tabulate, matplotlib.pyplot as plt
+import numpy as np
+import scipy.stats as stats
 
 def print_line():
     print("\n----------------------------------------\n")
@@ -170,7 +172,31 @@ def drugi():
     prices = list(map(get_price, jewellery))
     prices.sort()
     frequency_table(prices)
+    
+    
+def calculate_confidence_interval(prices, confidence):
+    mean = np.mean(prices)
+    std_dev = np.std(prices)
+    n = len(prices)
+    t = stats.t.ppf((1 + confidence) / 2, n - 1) # Z-score for the desired confidence level
 
+    margin_of_error = t * (std_dev / np.sqrt(n))
+    confidence_interval = (mean - margin_of_error, mean + margin_of_error)
+
+    return confidence_interval
+
+def cetvrti():
+    jewellery = prvi()
+    prices = list(map(get_price, jewellery))
+    confidence_intervals = {        
+        '90%': calculate_confidence_interval(prices, 0.90),
+        '95%': calculate_confidence_interval(prices, 0.95),
+        '99%': calculate_confidence_interval(prices, 0.99)
+    }
+
+    for confidence, interval in confidence_intervals.items():
+        print(f"The {confidence} confidence interval is {interval}")
+    print_line()
 if __name__ == "__main__":
-    treci()
+    cetvrti()
     
